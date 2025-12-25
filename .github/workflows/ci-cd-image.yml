@@ -2,7 +2,7 @@ name: Build, Push and Deploy to K3D
 run-name: Build, Push and Deploy to KD
 on: [push]
 env:
-  IMAGE_NAME: "${{ secret.DOCKER_USER }}"/nginx-k3d
+  IMAGE_NAME: "${{ secret.DOCKER_USER }}/nginx-k3d"
 jobs:
   build-push-image:
     runs-on: self-hosted
