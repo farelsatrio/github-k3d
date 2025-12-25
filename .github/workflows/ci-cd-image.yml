@@ -22,7 +22,7 @@ jobs:
         run: docker push $DOCKER_IMAGE
 
   deploy-k3d:
-    needs: build-push-iamge
+    needs: build-push-image
     runs-on: self-hosted
     steps:
       - name: Check out repository code
